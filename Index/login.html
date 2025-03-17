@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- StyleSheet file  -->
-    <link rel="stylesheet" href="styleSheet/login.css">
+    <link rel="stylesheet" href="/styleSheet/login.css">
     <!-- Tailwind css & DaisyUI Components cdn  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!--------------------------------->
 
-    <title>Payoo</title>
+    <title>Payoo/login</title>
 </head>
 
 <body>
-    <main class="md:w-[450px] bg-[#F4F5F7] mx-auto md:h-[800px] md:mt-[80px] rounded-[32px] md:p-6">
+    <main class="  md:w-[450px] bg-[#F4F5F7] mx-auto md:h-[800px] md:mt-[80px] rounded-[32px] md:p-6">
 
         <!-- Login Section  -->
 
@@ -34,18 +34,18 @@
                                 <label
                                     class="fieldset-label text-[#080808] font-[outfit] font-medium md:text-[20px]">Mobile
                                     Number</label>
-                                <input type="text"
+                                <input id="phoneNumber-input-value" type="text"
                                     class="input rounded-[32px] md:p-6  bg-[#F4F5F7] font-[outfit] text-[#080808] md:text-[20px]"
                                     placeholder="Enter Your Number" />
                                 <label class="fieldset-label text-[#080808] font-[outfit] font-medium text-[20px]">6
                                     Digit Pin</label>
-                                <input type="password"
+                                <input id="pin-input-value" type="password"
                                     class="input rounded-[32px] md:p-6  bg-[#F4F5F7] font-[outfit] text-[#080808] md:text-[20px]"
-                                    placeholder="Enter Your Pin" />
+                                    placeholder="Enter Your Pin" autocomplete="off" required />
                                 <div><a class="link link-hover text-blue-900 font-[outfit] font-bold text-[20px]">Forgot
                                         password?</a>
                                 </div>
-                                <button
+                                <button id="login-btn"
                                     class="btn bg-[#0874F2] rounded-[32px] text-[#ffff] font-semibold text-[24px] p-6  mt-4">Login</button>
                             </fieldset>
                         </div>
@@ -58,7 +58,7 @@
 
 
     <!-- Script file's  -->
-    <script src="Script/app.js"></script>
+    <script src="/Script/login.js"></script>
 
 </body>
 

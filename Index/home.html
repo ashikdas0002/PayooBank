@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-blue-300">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style sheet  -->
+    <link rel="stylesheet" href="/styleSheet/home.css">
+    <!-- Tailwind css & DaisyUI Components cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--------------------------------->
+    <title>Payoo/Home</title>
+</head>
+
+<body>
+    <main class="  md:w-[450px] bg-[#F4F5F7] mx-auto md:h-[800px] md:mt-[80px] rounded-[32px] md:p-6">
+        <header class="flex items-center justify-between">
+            <!-- Balance section  -->
+            <div class="flex items-center ">
+                <div>
+                    <img width="50px" src="/assets/Group.png" alt="">
+                </div>
+
+                <div>
+                    <!-- available Balance  -->
+                    <h3 class="text-[#080808]
+                    font-[outfit] text-[24px] font-extrabold">$<span id="available-blnc">45000</span></h3>
+                    <p class="text-[#0808087e] font-[outfit] font-normal">Available Balance</p>
+                </div>
+            </div>
+            <!-- Logout section -->
+            <div>
+                <button id="logout-btn" class="flex items-center 
+                bg-[#FFFFFF] border-2  border-gray-400 rounded-[8px] py-2 px-3">
+                    <span><img src="/assets/logout.png" alt=""></span>
+                    <span>Log Out</span>
+                </button>
+            </div>
+        </header>
+
+    </main>
+
+
+    <!-- Script file -->
+    <script src="/Script/home.js"></script>
+</body>
+
+</html>
