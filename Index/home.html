@@ -39,9 +39,9 @@
             </div>
 
         </header>
-        <div class="  border border-gray-300"></div>
+        <div class="  border border-gray-300 mt-5 "></div>
         <!-- Transaction Text Section  -->
-        <div>
+        <div class="mt-3">
             <h3 class="text-[#080808] text-[28px] font-[outfit] font-bold ">
                 🔥 Welcome to Payooo!
             </h3>
@@ -50,7 +50,55 @@
             </p>
         </div>
         <!-- Transaction Content Section  -->
-        <div>
+        <div class="grid   md:grid-cols-3 gap-3 mt-[30px] justify-center bg-[#FFFF] p-6 rounded-[8px]">
+            <!-- Transaction item  -->
+            <div id="add-money" class=" flex flex-col items-center w-[120px] bg-[#FFFF] rounded-[8px] py-2 ">
+                <img width="24px" src="/assets/wallet1.png" alt="">
+                <h4 class="text-[#08080879] font-[outfit] text-[18px] font-normal">Add Money</h4>
+            </div>
+            <!-- Transaction item  -->
+            <div id="cash-out" class=" flex flex-col items-center w-[120px] bg-[#FFFF] rounded-[8px] py-2 ">
+                <img width="24px" src="/assets/send1.png" alt="">
+                <h4 class="text-[#08080879] font-[outfit] text-[18px] font-normal">Cash Out</h4>
+            </div>
+            <!-- Transaction item  -->
+            <div id="transfer-money" class=" flex flex-col items-center w-[120px] bg-[#FFFF] rounded-[8px] py-2 ">
+                <img width="24px" src="/assets/money1.png" alt="">
+                <h4 class="text-[#08080879] font-[outfit] text-[18px] font-normal">Transfer Money</h4>
+            </div>
+            <!-- Transaction item  -->
+            <div id="get-bonus" class=" flex flex-col items-center w-[120px] bg-[#FFFF] rounded-[8px] py-2 ">
+                <img width="24px" src="/assets/bonus1.png" alt="">
+                <h4 class="text-[#08080879] font-[outfit] text-[18px] font-normal">Get Bonus</h4>
+            </div>
+            <!-- Transaction item  -->
+            <div id="bill-money" class=" flex flex-col items-center w-[120px] bg-[#FFFF] rounded-[8px] py-2 ">
+                <img width="24px" src="/assets/purse1.png" alt="">
+                <h4 class="text-[#08080879] font-[outfit] text-[18px] font-normal">Pay Bill</h4>
+            </div>
+            <!-- Transaction item  -->
+            <div id="transaction" class=" flex flex-col items-center w-[120px] bg-[#FFFF] rounded-[8px] py-2 ">
+                <img width="24px" src="/assets/transaction1.png" alt="">
+                <h4 class="text-[#08080879] font-[outfit] text-[18px] font-normal">Transactions</h4>
+            </div>
+        </div>
+
+        <!-- Transaction field section  -->
+        <div class="flex justify-center mt-5">
+            <fieldset class="fieldset w-xs bg-[#FFFF] border border-base-300 p-4 rounded-box">
+
+
+                <label class="fieldset-label">Amount</label>
+                <input id="add-money-field" type="text" class="input" placeholder="Number Of Amount" />
+
+                <label class="fieldset-label">Pin </label>
+                <input id="pin-field" type="password" class="input" placeholder="Enter Your Pin" />
+
+                <button id="addMoney"
+                    class="btn bg-[#0874F2] rounded-[32px] text-[#ffff] font-semibold text-[24px] p-6  mt-4">Add
+                    Money</button>
+            </fieldset>
+        </div>
 
         </div>
 
